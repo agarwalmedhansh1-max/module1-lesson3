@@ -4,9 +4,9 @@ from colorama import Fore, Style , init
 init(autoreset=True)
 
 destinations= {
-    "Mountains" : ["Shimla", "Mussorie", "Nepal", "Madhya Pradesh", "Ladakh"],
-    "Beaches" : ["Goa", "Thailand", "Andaman", "Bali", "Maldives", "USA"], 
-    "Cities" : ["Delhi", "Mumbai", "Kolkata", "New York", "Paris", "Berlin", "London"]
+    "mountains" : ["Shimla", "Mussorie", "Nepal", "Madhya Pradesh", "Ladakh"],
+    "beaches" : ["Goa", "Thailand", "Andaman", "Bali", "Maldives", "USA"], 
+    "cities" : ["Delhi", "Mumbai", "Kolkata", "New York", "Paris", "Berlin", "London"]
 }
 
 Jokes= ["Why dont Programmers Like Nature, Because they too many bugs", 
