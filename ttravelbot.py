@@ -16,7 +16,10 @@ Jokes= ["Why dont Programmers Like Nature, Because they too many bugs",
 def normalize_input(text):
     return re.sub(r"\s+", " ", text.strip().lower())
 
-
+def news_report():
+    print(Fore.CYAN + "which city?")
+    city=input(Fore.YELLOW + "You: ")
+    print(f"News report for {city}: \nA new theme park has just just been uvieled in the city. \nCrime rate in the city has increased slightly but police are heavily working on it.")
 def reccomend():
     print(Fore.CYAN + "Bot: Beaches, Mountains or Cities?")
     preference=input(Fore.YELLOW + "You: ")
@@ -53,7 +56,7 @@ def tell_joke():
 
 def show_help():
     print(Fore.MAGENTA + "Bot: I can: ")
-    print(Fore.GREEN + "- Tell a travel spot(say reccomendation). \n- Give packing tips(say packing). \n- Tell Jokes(say jokes).")
+    print(Fore.GREEN + "- Tell a travel spot(say reccomendation). \n- Give packing tips(say packing). \n- Tell Jokes(say jokes). \n-Tell local news report(say news)")
     print(Fore.CYAN + ("Bot: Type exit or bye to end."))
 
 def chat():
@@ -74,6 +77,8 @@ def chat():
             tell_joke()
         elif "help" in user_input:
             show_help()
+        elif "news" in user_input:
+            news_report()
         elif "exit" or "bye" in user_input:
             print(Fore.CYAN + f"Safe travels {name}")
             break
